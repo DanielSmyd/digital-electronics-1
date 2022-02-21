@@ -1,4 +1,4 @@
-# Lab 1: tvoje máma
+# Lab 1: Daniel Smyd
 
 ### De Morgan's laws
 
