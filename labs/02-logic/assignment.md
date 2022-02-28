@@ -18,7 +18,7 @@
    
    and simplified PoS (Product of the Sums) form of the "less than" function: 
    
-   ![Logic functions](images/Less_PoS.png)
+   ![Logic functions](images/less_PoS.png)
 
 ### 4-bit comparator
 
