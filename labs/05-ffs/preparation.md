@@ -1,4 +1,4 @@
-   ![EQ](images/Equations.png)
+   ![EQ](images/equations.png)
    
    **D-type FF**
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
