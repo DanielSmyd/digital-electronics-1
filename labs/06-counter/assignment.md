@@ -10,7 +10,7 @@
     -- Clocked process with synchronous reset which implements
     -- n-bit up/down counter.
     --------------------------------------------------------
-    p_cnt_up_down : process(clk)
+        p_cnt_up_down : process(clk)
     begin
         if rising_edge(clk) then
         
@@ -18,10 +18,14 @@
                 s_cnt_local <= (others => '0'); -- Clear all bits
 
             elsif (en_i = '1') then -- Test if counter is enabled
-
-                -- TEST COUNTER DIRECTION HERE
-
-                    s_cnt_local <= s_cnt_local + 1;
+                    
+                    if (cnt_up_i = '1') then
+                        
+                        s_cnt_local <= s_cnt_local + 1;
+                    else
+                        s_cnt_local <= s_cnt_local - 1;
+                    
+                    end if;
             end if;
         end if;
     end process p_cnt_up_down;
@@ -29,7 +33,7 @@
 
 2. Screenshot with simulated time waveforms. Test reset as well. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![your figure](images/screen.png)
 
 ### Two counters
 
